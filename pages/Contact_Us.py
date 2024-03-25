@@ -7,7 +7,6 @@ topics_loaded = []
 for index, item in topics.iterrows():
     topics_loaded.append(item["topic"])
 
-st.info("WARNING: This form will not work due to redacted credentials.")
 with st.form('contact'):
     email = st.text_input("Your Email Address")
     select_topic = st.selectbox("What topic do you want to discuss?", topics_loaded)
